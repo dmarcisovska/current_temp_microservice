@@ -1,0 +1,15 @@
+{
+  "name": "current-temp-microservice",
+  "version": "1.0.0",
+  "description": "Returns the current temperature",
+  "type": "module",
+  "main": "publisher.js",
+  "scripts": {
+    "start": "node publisher.js"
+  },
+  "author": "Denisa Marcisovska",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "zeromq": "^6.1.2"
+  }
+}
