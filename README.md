@@ -10,7 +10,7 @@ This microservice provides the current temperature in F units.
 Clone the repository to your local machine:
    ```bash
    git clone https://github.com/dmarcisovska/current_temp_microservice.git
-   cd current_temp_microserivce
+   cd current_temp_microservice
 ```
 
 ## How to run

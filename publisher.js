@@ -21,7 +21,7 @@ async function getTemperature(lat, lon) {
   try {
     const response = await axios.get(url);
     const temp = Math.round(response.data.main.temp);
-    return `Current temperature: ${temp}°F`;
+    return `${temp}°F`;
   } catch (error) {
     console.error("Error fetching temperature data:", error.response?.data || error.message);
     return "Temperature data unavailable";
@@ -41,7 +41,7 @@ async function run() {
     const temperature = await getTemperature(latitude, longitude);
     console.log("Sending temperature update:", temperature);
     await sock.send(["weather", temperature]);
-    await new Promise((resolve) => setTimeout(resolve, 60000)); 
+    await new Promise((resolve) => setTimeout(resolve, 6000)); 
   }
 }
 
